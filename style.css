@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Muli';
+  src: url('path/to/muli.woff2') format('woff2'),
+    /* Modern Browsers */
+    url('path/to/muli.woff') format('woff');
+  /* Older Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: 'Muli', sans-serif;
+  color: #f8f8f8;
+  font-weight: 550;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #445a5f;
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  height: 100vh;
+  width: 40vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.right {
+  min-height: 31vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.userInfos {
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin: 35px 0;
+}
+
+.form-controls {
+  color: #f8f8f8;
+  border: none;
+  border-radius: 6px;
+  background: #445a5f;
+  box-shadow: 3px 3px 2px #334447,
+    -3px -3px 2px #557177;
+}
+
+.form-labels {
+  margin: 0 0 8px 0;
+}
+
+input {
+  font-weight: bold;
+  text-align: center;
+  width: 200px;
+  height: 25px;
+
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  font-weight: 600;
+  width: 10rem;
+  height: 3rem;
+}
+
+button:active,
+button:hover {
+  border-radius: 6px;
+  background: #445a5f;
+  box-shadow: inset 3px 3px 2px #334447,
+    inset -3px -3px 2px #557177;
+}
